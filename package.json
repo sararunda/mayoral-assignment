@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint"
   },
+  
   "dependencies": {
     "micro": "^9.3.4",
     "next": "^12.1.5",
