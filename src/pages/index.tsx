@@ -4,23 +4,30 @@ import React, { useState } from 'react';
 
 import Data from 'service/data.json' assert { type: 'json' };
 import TshirtsList from "../pages/components/TshirtsList"; 
-import Filter from "../pages/components/Filter";
+import Filters from "./components/Filters";
 
 
 
 
 const HomePage: NextPage = () => {
-  const [filter, setFilter] = React.useState(''); 
+  
+  const [filterName, setFilterName] = React.useState('');
+  const [filterPrice, setFilterPrice] = React.useState('');  
 
 
   //handling functions
-const handleChangeFilter = (filterTshirtValue)=>{
-  setFilter(filterTshirtValue)
+const handleChangeName = (filterNameValue)=>{
+  setFilterName(filterNameValue)
   }
+const handleChangePrice = (filterPriceValue)=>{
+    setFilterPrice(filterPriceValue)
+    console.log(filterPriceValue)
+    }
   
   return <div>
-    <Filter filter={filter} handleChangeFilter={handleChangeFilter}/>
-   <TshirtsList data = {Data}/>
+    <Filters filterName={filterName}
+    filterPrice={filterPrice} handleChangeName={handleChangeName} handleChangePrice={handleChangePrice}/>
+   <TshirtsList filterName={filterName} data = {Data}/>
   </div>;
 };
 

@@ -1,6 +1,13 @@
 const TshirtsList = (props) =>{
     return <div>
-   {props.data.map(function(item, index){
+   {props.data.filter((item) =>
+        item.name.toLowerCase().includes(props.filterName.toLowerCase())
+      )
+   
+   
+   
+   
+   .map(function(item, index){
      return (<li key={index}>
        <img src = {item.photo} alt="foto camiseta" />
        <p>{item.name}</p>
