@@ -8,7 +8,6 @@
     "start": "next start",
     "lint": "next lint"
   },
-  
   "dependencies": {
     "micro": "^9.3.4",
     "next": "^12.1.5",
@@ -33,6 +32,7 @@
     "jest-environment-jsdom": "^28.1.0",
     "jest-junit": "^13.2.0",
     "prettier": "^2.6.2",
+    "sass": "^1.52.3",
     "typescript": "^4.7.3"
   },
   "browserslist": [

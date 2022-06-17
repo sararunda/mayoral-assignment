@@ -1,10 +1,8 @@
 import { NextPage } from 'next';
-
 import React, { useState } from 'react';
-
 import Data from 'service/data.json' assert { type: 'json' };
-import TshirtsList from '../pages/components/TshirtsList';
-import Filters from './components/Filters';
+import TshirtsList from '../components/TshirtsList';
+import Filters from '../components/Filters';
 
 const HomePage: NextPage = () => {
   const [filterName, setFilterName] = React.useState('');

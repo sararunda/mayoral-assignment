@@ -5,7 +5,7 @@ const Filters = (props) => {
     event.preventDefault();
   };
   return (
-    <form onSubmit={handleSubmitForm}>
+    <form className="form" onSubmit={handleSubmitForm}>
       <FilterName filterName={props.filterName} handleChangeName={props.handleChangeName} />
       <FilterPrice filterPrice={props.filterPrice} handleChangePrice={props.handleChangePrice} />
     </form>
