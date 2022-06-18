@@ -4,8 +4,13 @@ const FilterName = (props) => {
     props.handleChangeName(filterTshirtValue);
   };
   return (
-    <div className="filter-name">
-      <input onChange={handleChangeInput} placeholder="🔍Buscar" type="text" />
+    <div>
+      <input
+        className="filter-name"
+        onChange={handleChangeInput}
+        placeholder="🔍Buscar"
+        type="text"
+      />
     </div>
   );
 };

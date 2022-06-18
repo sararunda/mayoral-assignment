@@ -10,7 +10,18 @@
     border: 1px solid grey;
     border-radius: 5px;
     width: 200px;
+    font-size: 18px;
     
+}
+.filter-name::placeholder{
+   font-size: 18px;
+   padding: 5px;
+    
+}
+.label-price{
+    font-size: 20px;
+    font-weight: 600;
+    color: #595959;
 }
 .filter-price{
     padding: 5px 5px 5px 0;
@@ -18,5 +29,13 @@
     margin-left: 10px;
     border-radius: 5px;
     font-size: 17px;
+}
+@media all and (min-width: 1000px){
+    .form{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+
 }
 

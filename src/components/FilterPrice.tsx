@@ -5,7 +5,9 @@ const FilterPrice = (props) => {
   };
   return (
     <div>
-      <label htmlFor="">Precio</label>
+      <label className="label-price" htmlFor="">
+        Precio
+      </label>
       <select
         className="filter-price"
         value={props.filterPrice}

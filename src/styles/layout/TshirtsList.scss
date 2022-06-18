@@ -2,5 +2,16 @@
     display: grid;
     grid-template-columns: 200px 200px;
     justify-content: center;
-  
+}
+@media all and (min-width: 600px){
+    .list{
+        grid-template-columns: 200px 200px 200px 200px;
+    }
+    
+}
+@media all and (min-width: 1000px){
+    .list{
+        grid-template-columns: 200px 200px 200px 200px 200px;
+    }
+    
 }
