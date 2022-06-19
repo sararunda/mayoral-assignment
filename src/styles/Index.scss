@@ -1,4 +1,13 @@
-@import "core/Reset";
-@import "layout/Filters";
-@import "layout/TshirtsList";
-@import "layout/TshirtItem";
+@import 'core/Reset';
+@import 'layout/Filters';
+@import 'layout/TshirtsList';
+@import 'layout/TshirtItem';
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.main-container {
+  display: inline-block;
+}

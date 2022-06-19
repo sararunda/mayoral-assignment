@@ -1,12 +1,19 @@
 import TshirtItem from './TshirtItem';
-const TshirtsList = (props) => {
+import { Tshirt, OrderByPriceFilterValues } from '../types/types';
+interface TshirtsListProps {
+  filterName: string;
+  filterPrice: OrderByPriceFilterValues;
+  data: Array<Tshirt>;
+}
+
+const TshirtsList = (props: TshirtsListProps) => {
   const renderList = () => {
     return props.data
       .filter((item) => item.name.toLowerCase().includes(props.filterName.toLowerCase()))
       .sort(function (a, b) {
-        if (props.filterPrice === 'up') {
+        if (props.filterPrice === OrderByPriceFilterValues.ascending) {
           return a.price - b.price;
-        } else if (props.filterPrice === 'down') {
+        } else if (props.filterPrice === OrderByPriceFilterValues.descending) {
           return b.price - a.price;
         } else {
           return 0;

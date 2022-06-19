@@ -1,42 +1,40 @@
-.container-item{
-    text-align: center;
-    width: 180px;
-    height: 450px;
-    border: 1px solid #77B1B9;
-    box-shadow: 0 0 10px #77B1B9;
-    margin-bottom: 20px;
-    
+.container-item {
+  text-align: center;
+  height: 450px;
+  border: 1px solid #77b1b9;
+  box-shadow: 0 0 2px #77b1b9;
 }
-.image{
-    width: 180px;
+.image {
+  width: 80%;
+  padding-top: 10%;
 }
-.name{
-    font-size: larger;
-    padding: 5px;
-    font-weight: 600;
-    color: #595959;
+.name {
+  font-size: larger;
+  padding: 5px;
+  font-weight: 600;
+  color: #595959;
 }
-.price{
-    font-size: 18px;
-    color: #595959;
-    padding-bottom: 10px;
+.price {
+  font-size: 18px;
+  color: #595959;
+  padding-bottom: 10px;
 }
-.add{
-    background-color: #3a71ce;
-    text-transform: uppercase;
-    padding: 7px;
-    margin: 10px 0;
-    border-radius: 5px;
-    color: white;
+.add {
+  background-color: #3a71ce;
+  text-transform: uppercase;
+  padding: 7px;
+  margin: 10px 0;
+  border-radius: 5px;
+  color: white;
 }
-.add:hover{
-    color: #3a71ce;
-    background-color: white;
-    border: 1px solid #3a71ce;
+.add:hover {
+  color: #3a71ce;
+  background-color: white;
+  border: 1px solid #3a71ce;
 }
-@media all and (min-width: 1000px){
-    
-
+@media all and (min-width: 1000px) {
+  .image {
+    height: 200px;
+    object-fit: cover;
+  }
 }
-
-

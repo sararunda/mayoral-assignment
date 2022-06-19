@@ -1,4 +1,9 @@
-const FilterPrice = (props) => {
+import { OrderByPriceFilterValues } from '../types/types';
+interface FilterPriceProps {
+  handleChangePrice(filterPriceValue: OrderByPriceFilterValues): void;
+  filterPrice: OrderByPriceFilterValues;
+}
+const FilterPrice = (props: FilterPriceProps) => {
   const handleChangeSelect = (event) => {
     const filterPriceValue = event.currentTarget.value;
     props.handleChangePrice(filterPriceValue);
@@ -6,7 +11,7 @@ const FilterPrice = (props) => {
   return (
     <div>
       <label className="label-price" htmlFor="">
-        Precio
+        Ordenar por:
       </label>
       <select
         className="filter-price"
@@ -15,9 +20,9 @@ const FilterPrice = (props) => {
         name=""
         id=""
       >
-        <option value="">Seleccione una opción</option>
-        <option value="up">Ascendente</option>
-        <option value="down">Descendente</option>
+        <option value={OrderByPriceFilterValues.none}>Seleccione una opción</option>
+        <option value={OrderByPriceFilterValues.ascending}>Precio ascendente</option>
+        <option value={OrderByPriceFilterValues.descending}>Precio descendente</option>
       </select>
     </div>
   );

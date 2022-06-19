@@ -1,4 +1,8 @@
-const TshirtItem = (props) => {
+import { Tshirt } from '../types/types';
+interface TshirtItemProps {
+  item: Tshirt;
+}
+const TshirtItem = (props: TshirtItemProps) => {
   return (
     <div className="container-item">
       <div>
