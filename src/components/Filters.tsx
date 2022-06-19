@@ -3,9 +3,9 @@ import FilterPrice from './FilterPrice';
 import { OrderByPriceFilterValues } from '../types/types';
 interface FilterProps {
   filterName: string;
-  handleChangeName(handleChangeName: void): void;
+  handleChangeName(filterNameValue: string): void;
   filterPrice: OrderByPriceFilterValues;
-  handleChangePrice(handleChangePrice: OrderByPriceFilterValues): void;
+  handleChangePrice(filterPriceValue: OrderByPriceFilterValues): void;
 }
 const Filters = (props: FilterProps) => {
   return (

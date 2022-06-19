@@ -1,9 +1,10 @@
 interface FilterNameProps {
-  handleChangeName(handleChangeName: void): void;
+  handleChangeName(filterNameValue: string): void;
+  // handleChangeName: (filterNameValue: string) => void;
 }
 const FilterName = (props: FilterNameProps) => {
   const handleChangeInput = (event) => {
-    const filterTshirtValue = event.target.value;
+    const filterTshirtValue = event.target.value as string; // casting to string
     props.handleChangeName(filterTshirtValue);
   };
   return (

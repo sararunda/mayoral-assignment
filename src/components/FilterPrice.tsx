@@ -5,7 +5,7 @@ interface FilterPriceProps {
 }
 const FilterPrice = (props: FilterPriceProps) => {
   const handleChangeSelect = (event) => {
-    const filterPriceValue = event.currentTarget.value;
+    const filterPriceValue = +event.currentTarget.value;
     props.handleChangePrice(filterPriceValue);
   };
   return (

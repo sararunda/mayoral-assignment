@@ -1,16 +1,18 @@
 import { NextPage } from 'next';
 import React, { useState } from 'react';
-import Data from 'service/data.json' assert { type: 'json' };
 import TshirtsList from '../components/TshirtsList';
 import Filters from '../components/Filters';
-import { OrderByPriceFilterValues } from '../types/types';
+import { OrderByPriceFilterValues, Tshirt } from '../types/types';
+interface HomePageProps {
+  data: Array<Tshirt>;
+}
 
-const HomePage: NextPage = () => {
+const HomePage: NextPage = (props: HomePageProps) => {
   const [filterName, setFilterName] = useState('');
   const [filterPrice, setFilterPrice] = useState(OrderByPriceFilterValues.none);
 
   //handling functions
-  const handleChangeName = (filterNameValue) => {
+  const handleChangeName = (filterNameValue: string) => {
     setFilterName(filterNameValue);
   };
   const handleChangePrice = (filterPriceValue: OrderByPriceFilterValues) => {
@@ -26,10 +28,18 @@ const HomePage: NextPage = () => {
           handleChangeName={handleChangeName}
           handleChangePrice={handleChangePrice}
         />
-        <TshirtsList filterPrice={filterPrice} filterName={filterName} data={Data} />
+        <TshirtsList filterPrice={filterPrice} filterName={filterName} data={props.data} />
       </div>
     </div>
   );
 };
+
+export async function getServerSideProps() {
+  // Fetch data from external API
+  const res = await fetch(`http://localhost:3000/data.json`);
+  const data = await res.json();
+  // Pass data to the page via props
+  return { props: { data } };
+}
 
 export default HomePage;
