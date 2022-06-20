@@ -1,11 +1,13 @@
-.list {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: 180px 180px;
-  justify-content: center;
-}
-@media all and (min-width: 1000px) {
-  .list {
-    grid-template-columns: 200px 200px 200px 200px 200px;
+.TshirtList {
+  &__list {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 180px 180px;
+    justify-content: center;
+  }
+  @media all and (min-width: 1000px) {
+    &__list {
+      grid-template-columns: 200px 200px 200px 200px 200px;
+    }
   }
 }

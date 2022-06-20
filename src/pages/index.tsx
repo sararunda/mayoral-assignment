@@ -20,8 +20,8 @@ const HomePage: NextPage = (props: HomePageProps) => {
   };
 
   return (
-    <div className="flex-container">
-      <div className="main-container">
+    <div className="index__flex-container">
+      <div className="index__flex-container__main-container">
         <Filters
           filterName={filterName}
           filterPrice={filterPrice}

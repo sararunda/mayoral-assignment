@@ -9,7 +9,7 @@ interface FilterProps {
 }
 const Filters = (props: FilterProps) => {
   return (
-    <form className="form">
+    <form className="Filters__form">
       <FilterName handleChangeName={props.handleChangeName} />
       <FilterPrice filterPrice={props.filterPrice} handleChangePrice={props.handleChangePrice} />
     </form>

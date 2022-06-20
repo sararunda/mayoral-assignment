@@ -10,11 +10,11 @@ const FilterPrice = (props: FilterPriceProps) => {
   };
   return (
     <div>
-      <label className="label-price" htmlFor="">
+      <label className="FilterPrice__label-price" htmlFor="">
         Ordenar por:
       </label>
       <select
-        className="filter-price"
+        className="FilterPrice__filter-price"
         value={props.filterPrice}
         onChange={handleChangeSelect}
         name=""

@@ -10,7 +10,7 @@ const FilterName = (props: FilterNameProps) => {
   return (
     <div>
       <input
-        className="filter-name"
+        className="FilterName__filter-name"
         onChange={handleChangeInput}
         placeholder="🔍Buscar"
         type="text"

@@ -1,36 +1,42 @@
-.form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 70px;
+.Filters {
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+  }
+  @media all and (min-width: 1000px) {
+    &__form {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
 }
-.filter-name {
-  margin: 50px 0 40px 0;
-  padding: 5px;
-  border: 1px solid grey;
-  border-radius: 5px;
-  width: 200px;
-  font-size: 18px;
+.FilterName {
+  &__filter-name {
+    margin: 50px 0 40px 0;
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 18px;
+    &::placeholder {
+      font-size: 18px;
+      padding: 5px;
+    }
+  }
 }
-.filter-name::placeholder {
-  font-size: 18px;
-  padding: 5px;
-}
-.label-price {
-  font-size: 20px;
-  font-weight: 600;
-  color: #595959;
-}
-.filter-price {
-  padding: 5px 5px 5px 0;
-  border: 1px solid grey;
-  margin-left: 10px;
-  border-radius: 5px;
-  font-size: 17px;
-}
-@media all and (min-width: 1000px) {
-  .form {
-    flex-direction: row;
-    justify-content: space-between;
+.FilterPrice {
+  &__label-price {
+    font-size: 20px;
+    font-weight: 600;
+    color: #595959;
+  }
+  &__filter-price {
+    padding: 5px 5px 5px 0;
+    border: 1px solid grey;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-size: 17px;
   }
 }

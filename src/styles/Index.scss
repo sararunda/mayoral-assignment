@@ -3,11 +3,12 @@
 @import 'layout/TshirtsList';
 @import 'layout/TshirtItem';
 
-.flex-container {
-  display: flex;
-  justify-content: center;
-}
-
-.main-container {
-  display: inline-block;
+.index {
+  &__flex-container {
+    display: flex;
+    justify-content: center;
+    &__main-container {
+      display: inline-block;
+    }
+  }
 }

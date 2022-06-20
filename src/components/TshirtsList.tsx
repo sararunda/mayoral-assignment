@@ -29,7 +29,7 @@ const TshirtsList = (props: TshirtsListProps) => {
   };
 
   return renderList().length > 0 ? (
-    <ul className="list">{renderList()}</ul>
+    <ul className="TshirtList__list">{renderList()}</ul>
   ) : (
     <p>No se encuentra {props.filterName}</p>
   );

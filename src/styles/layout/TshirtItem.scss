@@ -1,40 +1,44 @@
-.container-item {
-  text-align: center;
-  height: 450px;
-  border: 1px solid #77b1b9;
-  box-shadow: 0 0 2px #77b1b9;
-}
-.image {
-  width: 80%;
-  padding-top: 10%;
-}
-.name {
-  font-size: larger;
-  padding: 5px;
-  font-weight: 600;
-  color: #595959;
-}
-.price {
-  font-size: 18px;
-  color: #595959;
-  padding-bottom: 10px;
-}
-.add {
-  background-color: #3a71ce;
-  text-transform: uppercase;
-  padding: 7px;
-  margin: 10px 0;
-  border-radius: 5px;
-  color: white;
-}
-.add:hover {
-  color: #3a71ce;
-  background-color: white;
-  border: 1px solid #3a71ce;
-}
-@media all and (min-width: 1000px) {
-  .image {
-    height: 200px;
-    object-fit: cover;
+.TshirtItem {
+  &__container-item {
+    text-align: center;
+    height: 450px;
+    border: 1px solid #77b1b9;
+    box-shadow: 0 0 2px #77b1b9;
+    &__image {
+      width: 80%;
+      padding-top: 10%;
+    }
+    &__name {
+      font-size: larger;
+      padding: 5px;
+      font-weight: 600;
+      color: #595959;
+    }
+    &__price {
+      font-size: 18px;
+      color: #595959;
+      padding-bottom: 10px;
+    }
+    &__add {
+      background-color: #3a71ce;
+      text-transform: uppercase;
+      padding: 7px;
+      margin: 10px 0;
+      border-radius: 5px;
+      color: white;
+      &:hover {
+        color: #3a71ce;
+        background-color: white;
+        border: 1px solid #3a71ce;
+      }
+    }
+  }
+  @media all and (min-width: 1000px) {
+    &__container-item {
+      &__image {
+        height: 200px;
+        object-fit: cover;
+      }
+    }
   }
 }
