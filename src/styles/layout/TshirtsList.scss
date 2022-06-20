@@ -3,7 +3,7 @@
     display: grid;
     gap: 20px;
     grid-template-columns: 180px 180px;
-    justify-content: center;
+    margin-bottom: 100px;
   }
   @media all and (min-width: 1000px) {
     &__list {
