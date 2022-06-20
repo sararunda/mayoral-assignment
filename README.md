@@ -10,7 +10,7 @@ $ yarn install
 $ yarn run dev
 ```
 
-## 1.Tech stack🛠️:
+## 1.Tech stack 🛠️
 
 Using HTML, Sass, TypeScript, React, Next js.
 
@@ -18,7 +18,7 @@ Use of mediaqueries for the adaptation of the application to the different devic
 
 Using git for project version control.
 
-## 2.Requirements and functions:
+## 2.Requirements and functions
 - [x] Separates into components in an optimal and organised way
 - [x] The view should be as close as possible to the attached photos
 - [x] Implement product search by name
@@ -27,7 +27,7 @@ Using git for project version control.
 - [x] Implement logic and design of a "sort" component (ascending and descending price).
 - [x] Create the appropriate unit tests
 
-## 2.Components:jigsaw::
+## 2.Components :jigsaw:
 
 
  ![componentsMayoral](https://user-images.githubusercontent.com/64798006/174634320-949101ac-42f5-4af9-a5f6-d153bae6db40.PNG)
@@ -42,6 +42,15 @@ Using git for project version control.
 - SCSS and BEM format for styles.
 - Flex and Grid for adapting lists to different formats.
 - SCSS files divided according to each component.
+
+## 4.Trade off :bulb:
+
+- Use of **Typescript** and **Next js**: has been new to me, so I need to practice and study the documentation much better. For now, the types have been used for the properties and functions of my components.
+
+- Next images: It is necessary to change the **img** element for the **Imag**e component. I haven't had time to do it because I need to know exactly what properties it needs and study its conditions.
+
+- Unit **test**: I have applied tests to one of the components but I need to study more about the Jest documentation and test the remaining components.
+
   
 
 
