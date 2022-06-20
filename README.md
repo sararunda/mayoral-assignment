@@ -67,16 +67,3 @@ $ yarn run dev
 
 - Types.ts file: I have created a types file to optimally pass the types to the necessary components.
 
-#### :raising_hand: Author:
-
-Sara Fernández
-
-
-
-
-
-  
-
-
-
-
