@@ -53,7 +53,7 @@ $ yarn run dev
 
 ## 4.Remarks :mag_right:
 
-- Jest.config.js file: I have configured the compilerOptions path, because it was not displaying the tests and I only had to delete a "./" In this same file, (line 11) I have added an empty object because I could not find the path "paths".
+- Jest.config.js file: I have configured the compilerOptions path, because it was not displaying the tests and I only had to delete a "./" In this same file, (line 11) I have added an empty object because the file could not find "paths".
 
 - Select type filter: I have chosen to make a "select" because I found it more intuitive for the user, as he/she can intuit from the first glance that he/she can sort by price.
 
