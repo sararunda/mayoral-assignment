@@ -12,11 +12,11 @@ $ yarn run dev
 
 ## 1.Tech stack 🛠️
 
-Using HTML, Sass, TypeScript, React, Next js.
+- Using HTML, Sass, TypeScript, React, Next js.
 
-Use of mediaqueries for the adaptation of the application to the different devices, mobile and desktop.
+- Use of mediaqueries for the adaptation of the application to the different devices, mobile and desktop.
 
-Using git for project version control.
+- Using git for project version control.
 
 ## 2.Requirements and functions
 - [x] Separates into components in an optimal and organised way
@@ -47,9 +47,29 @@ Using git for project version control.
 
 - Use of **Typescript** and **Next js**: has been new to me, so I need to practice and study the documentation much better. For now, the types have been used for the properties and functions of my components.
 
-- Next images: It is necessary to change the **img** element for the **Imag**e component. I haven't had time to do it because I need to know exactly what properties it needs and study its conditions.
+- Next images: It is necessary to change the **img** element for the **Image** component. I haven't had time to do it because I need to know exactly what properties it needs and study its conditions.
 
 - Unit **test**: I have applied tests to one of the components but I need to study more about the Jest documentation and test the remaining components.
+
+## 4.Remarks :mag_right:
+
+- Jest.config.js file: I have configured the compilerOptions path, because it was not displaying the tests and I only had to delete a "./" In this same file, (line 11) I have added an empty object because I could not find the path "paths".
+
+- Select type filter: I have chosen to make a "select" because I found it more intuitive for the user, as he/she can intuit from the first glance that he/she can sort by price.
+
+- Fetch: Although I have obtained the data locally, I have simulated a fetch
+
+``export async function getServerSideProps() {
+ const res = await fetch(`http://localhost:3000/data.json`);
+ const data = await res.json();
+ return { props: { data } };
+}``
+
+- Types.ts file: I have created a types file to optimally pass the types to the necessary components.
+
+
+
+
 
   
 
